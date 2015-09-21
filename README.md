@@ -3,7 +3,7 @@ docker-openmaint
 
 Docker image for openMAINT demo application.
 
-[openMAINT](openmaint.org) is open source property management software. The installation process is arduous, so this docker image mimics the installation directions and loads the sample database for the purpose of testing out the software.
+[openMAINT](http://openmaint.org) is open source property management software. The installation process is arduous, so this docker image mimics the installation directions and loads the sample database for the purpose of testing out the software.
 
 Builds on:
 * https://github.com/docker-library/postgres/blob/master/9.1/Dockerfile
