@@ -1,4 +1,4 @@
-FROM postgres:9.1
+FROM postgres:9.1.18
 
 RUN apt-get update && apt-get install -y curl unzip
 ENV OPENMAINT=openmaint-1.0-2.3.1
@@ -11,4 +11,3 @@ RUN set -x \
   && rm $OPENMAINTZIP
 ADD init-openmaint-postgres.sh /docker-entrypoint-initdb.d/
 ADD openmaint-demo.sql /docker-entrypoint-initdb.d/
-

@@ -1,4 +1,4 @@
-FROM tomcat:7-jre8
+FROM tomcat:7.0.69-jre7
 
 ENV OPENMAINT=openmaint-1.0-2.3.1
 ENV OPENMAINTZIP=${OPENMAINT}.zip
@@ -15,4 +15,3 @@ RUN set -x \
   && cp openmaint-*.war $CATALINA_HOME/webapps/openmaint.war
 
 EXPOSE 8080
-
